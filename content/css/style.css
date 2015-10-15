@@ -43,7 +43,7 @@ body {
 }
 
 .nav form a {
-    display: inline-table;
+    display: inline-block;
     margin: 0;
     width: 33.3333%;
     line-height: 50px;
@@ -52,12 +52,20 @@ body {
 }
 
 .scrollbox {
+    display: block;
+    padding: 0;
+    margin: 0;
     overflow-y: scroll;
     height: calc(100vh - 101px);
 }
 
+.nav ul li {
+    list-style: none;
+    padding: 0;
+}
+
 .nav .scrollbox img {
-    max-width: 100%
+    width: 100%
 }
 
 
