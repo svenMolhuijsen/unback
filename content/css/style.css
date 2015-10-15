@@ -59,13 +59,11 @@ body {
     height: calc(100vh - 101px);
 }
 
-.nav ul li {
-    list-style: none;
-    padding: 0;
-}
+
 
 .nav .scrollbox img {
-    width: 100%
+    width: 100%;
+
 }
 
 
