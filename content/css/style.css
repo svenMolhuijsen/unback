@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
 html,
 body {
     height: 100%;
@@ -17,6 +18,8 @@ body {
     -moz-box-orient: horizontal;
     -ms-box-orient: horizontal;
     box-orient: horizontal;
+    font-family: "roboto"!important;
+    font-weight: 400;
 }
 
 
@@ -51,11 +54,15 @@ body {
     text-align: center;
 }
 
+
+/*SCROLLBOX*/
+
 .scrollbox {
     padding: 0;
     margin: 0;
     overflow-y: scroll!important;
     height: calc(100vh - 101px);
+    line-height: 0;
 }
 
 .nav .scrollbox img {
@@ -66,12 +73,56 @@ body {
 /*MAIN*/
 
 .main {
-    background: url("../img/footer_lodyas.png") repeat fixed center;
+    background: url("https://unsplash.it/200/130/?blur");
+    background-size: cover;
     -ms-flex: 1;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -ms-box-flex: 1;
     box-flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontainer {
+    max-width: 50vw;
+    color: white;
+    font-family: sans-serif;
+}
+
+.imgcontainer h1 {
+    line-height: 0;
+    font-family: "roboto";
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.imgcontainer img {
+    width: 100%;
+}
+
+.imgcontainer span,
+.imgcontainer p {
+    float: right;
+    font-family: "roboto";
+    font-weight: 400;
+}
+
+.imgcontainer p {
+    float: left;
+    margin-top: 0;
+}
+
+.imgcontainer span a {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 15px 0px;
+}
+
+.imgcontainer span a img {
+    width: 30px;
 }
 
 
@@ -93,30 +144,8 @@ body {
     border-radius: 50px;
 }
 
-.scrollbox::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
-}
-
-.scrollbox::-webkit-scrollbar-thumb:active {
-    background: #000000;
-}
-
 .scrollbox::-webkit-scrollbar-track {
     background: #666666;
     border: 0px none #ffffff;
     border-radius: 50px;
 }
-
-.scrollbox::-webkit-scrollbar-track:hover {
-    background: #666666;
-}
-
-.scrollbox::-webkit-scrollbar-track:active {
-    background: #333333;
-}
-
-.scrollbox::-webkit-scrollbar-corner {
-    background: transparent;
-}
-
-</style>
